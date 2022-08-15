@@ -1,11 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <html>
     <style>
+        @media screen {
         * {
             font-family: "Roboto", sans-serif;
             box-sizing: inherit;
@@ -193,6 +195,48 @@
             color: #4CAF50;
             text-decoration: none;
             text-align: left;
+        }
+        }
+        @media screen and (max-width: 850px) {
+            html {
+                size: 70%;
+            }
+            div[name=left], div[name=center], div[name=right] {
+                float: none;
+                width: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+            table {
+                width: auto;
+                font-size: 90%;
+            }
+            
+            form {
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            html {
+                width: 100%;
+            }
+            h1, h2 {
+                font-size: 100%;
+            }
+            div[name=left], div[name=center], div[name=right] {
+                float: none;
+                width: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+            table {
+                width: auto;
+                font-size: 70%;
+            }
+            
+            form {
+                width: auto;
+            }
         }
     </style>
     <head>
